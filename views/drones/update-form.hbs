@@ -1,1 +1,36 @@
-<h2>Update the drone</h2>
+<h2>Editar el dron</h2>
+
+
+<form action="/drones/{{drone._id}}/edit" method="POST">
+
+    <label for="name">Nombre del drone:</label>
+    <input type="text" name="name" value="{{drone.name}}">
+<br>
+    <label for="propellers">Número de hélices:</label>
+    <input type="text" name="propellers" value="{{drone.propellers}}">
+<br>
+    <label for="maxSpeed">Velocidad Máxima:</label>
+    <input type="text" name="maxSpeed" value="{{drone.maxSpeed}}">
+<br>
+    <button>Actualizar</button>
+    
+
+
+</form>
+
+{{!-- 
+<div>
+    <h2>{{drone.name}}</h2>
+    <p>{{drone.propellers}}</p>
+    <p>{{drone.maxSpeed}}</p>
+
+    <a href="/drones/{{drone._id}}/edit">
+        <button>Actualizar</button>
+    </a>
+
+    <form action="/drones/{{drones._id}}/delete" method="POST">
+        <button>Borrar</button>
+    </form>
+
+
+</div> --}}
