@@ -9,13 +9,10 @@
 
         {{this.maxSpeed}}   
 
-        <form action="/drones" method="POST">
+        <form action="/drones/{{this._id}}/delete" method="POST">
              <button>Borrar</button>
         </form>
             <br>
-
-       
-        
     </li>  
 {{/each}}
 

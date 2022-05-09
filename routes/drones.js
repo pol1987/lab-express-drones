@@ -94,10 +94,7 @@ router.post('/drones/:id/edit', (req, res, next) => {
   })
 });
 
-
-
-
-router.post("drones/:id/delete", async (req, res, next) => {
+router.post("/drones/:id/delete", async (req, res, next) => {
    const { id } = req.params
 
    try {
